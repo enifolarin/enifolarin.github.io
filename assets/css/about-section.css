@@ -1,0 +1,157 @@
+#about-section {
+    background: transparent;
+}
+
+#about-section::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#about-section .container .about-me {
+    height: 100%;
+    width: 100%;
+    flex-flow: column wrap;
+    background-color: transparent;
+}
+
+#about-section .about-me .about-me-card {
+    text-align: left;
+    height: 60%;
+    width: 100%;
+    padding: 120px 20px 10px 20px;
+    background-color: transparent;
+    margin: 0 auto;
+    color: var(--text-color);
+}
+#about-section .about-me .about-me-card img {
+    animation-duration: 5s;
+}
+#about-section .about-me .about-me-card h2 {
+    font-family: var(--font-four);
+    font-size: 1.7em;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin: 0px 0px 20px 0px;
+    text-align: left;
+}
+
+#about-section .about-me .about-me-card p {
+    font-family: var(--font-three);
+    font-size: 0.9em;
+    line-height: 20px;
+    margin: 0px 0px 15px 0px;
+}
+
+
+#about-section .container .my-profile {
+    height: 100%;
+    width: 100%;
+    flex-flow: column wrap;
+    background-color: transparent;
+}
+
+.card-container {
+    background-color: transparent;
+    height: 60%;
+    width: 100%;
+    padding: 30px 15px 30px 15px;
+}
+
+.card {
+    height: 400px;
+    width: 300px;
+    background: #808080;
+    border-radius: 10px;
+    transition: background 0.8s;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 70px 63px -60px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+}
+@media screen and (max-width: 353px) {
+    .card {
+        height: 350px;
+        width: 100%;
+    }
+}
+@media screen and (min-width: 999px) {
+    .card-container {
+        padding: 30px 60px 30px 15px;
+    }
+    .card {
+        height: 400px;
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .card {
+        height: 400px;
+        width: 300px;
+    }
+}
+
+.card0 {
+    background: url("../img/enny.jpeg") center center no-repeat;
+    background-size: 400px;
+}
+
+.card0:hover {
+    background: url("../img/enny.jpeg") left center no-repeat;
+    background-size: 540px;
+}
+
+.card0:hover h2 {
+    opacity: 1;
+}
+
+.card h2 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #fff;
+    margin: 20px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.border {
+    height: 97%;
+    width: 97%;
+    background: transparent;
+    border-radius: 10px;
+    transition: border 1s;
+    position: relative;
+}
+
+.border:hover {
+    border: 1px solid #fff;
+}
+
+@media screen and (min-width: 660px) {
+    #about-section .about-me .about-me-card {
+        padding: 120px 40px 10px 40px;
+    }
+    
+    #about-section .about-me .about-me-card h2 {
+        font-size: 1.9em;
+    }
+    
+    #about-section .about-me .about-me-card p {
+        font-size: 1em;
+    }
+}
+@media screen and (min-width: 999px) {
+    #about-section {
+        height: 100vh;
+    }
+    #about-section .about-me .about-me-card {
+        padding: 30px 0px 0px 60px;
+    }
+    #about-section .about-me .about-me-card h2 {
+        font-size: 2.7em;
+    }
+}
