@@ -1,0 +1,70 @@
+@font-face
+{
+    font-family: 'boxicons';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/boxicons.eot');
+    src: url('../fonts/boxicons.eot') format('embedded-opentype'),
+    url('../fonts/boxicons.woff2') format('woff2'),
+    url('../fonts/boxicons.woff') format('woff'),
+    url('../fonts/boxicons.ttf') format('truetype'),
+    url('../fonts/boxicons.svg?#boxicons') format('svg');
+}
+.bx
+{
+    font-family: 'boxicons' !important;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    display: inline-block;
+
+    text-transform: none;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  
+
+.bx-code-alt:before {
+  content: "\ea69";
+}
+.bxl-wordpress:before {
+  content: "\e98f";
+}
+.bx-code-block:before {
+    content: "\ea6a";
+}
+
+.bx-tachometer:before {
+  content: "\ec3a";
+}
+.bx-devices:before {
+  content: "\ea98";
+}
+.bx-search-alt:before {
+  content: "\ebf8";
+}
+.bx-bulb:before {
+  content: "\ea0d";
+}
+.bxs-rocket:before {
+  content: "\ee95";
+}
+
+
+.bxl-facebook:before {
+    content: "\e92f";
+  }
+  .bxl-twitter:before {
+    content: "\e982";
+  }
+  .bxl-whatsapp:before {
+    content: "\e98a";
+  }
+  .bxl-instagram:before {
+    content: "\e942";
+  }
