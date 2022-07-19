@@ -139,6 +139,21 @@ figcaption {
     background-position: center;
     transition: var(--slowTransition);
 }
+.copy {
+    background-image: url(../img/copy-1.jpg) !important;
+}
+.articles {
+    background-image: url(../img/article-o.jpg) !important;
+}
+.fiction {
+    background-image: url(../img/fiction.jpg) !important;
+}
+.copy .container .my-info,
+.articles .container .my-info,
+.fiction .container .my-info {
+    background: radial-gradient(rgb(0, 0, 0, .4), transparent);
+    color: #fff !important;
+}
 
 #single-home-section .container .my-info {
     height: 100%;
@@ -274,19 +289,19 @@ figcaption {
 }
 .single-content-section .the-content h2,
 .single-content-section .registry-content h2 {
-    font-size: 1.9em;
+    font-size: 2.0em;
     font-weight: bold;
 }
 .single-content-section .the-content h3,
 .single-content-section .registry-content h3 {
     letter-spacing: 2.5px;
-    font-size: 22px;
+    font-size: 1.7em;
     font-weight: bold;
     display: block;
 }
 .single-content-section .the-content h4,
 .single-content-section .registry-content h4 {
-    font-size: 1.15em;
+    font-size: 1.25em;
     font-weight: bold;
 }
 .single-content-section .the-content h3::after,
@@ -308,7 +323,7 @@ figcaption {
 }
 .single-content-section .the-content p,
 .single-content-section .registry-content p {
-    font-size: 1rem;
+    font-size: 0.91rem;
     font-family: var(--font-three);
     transition: 1.0s;
     margin-bottom: 16px;
