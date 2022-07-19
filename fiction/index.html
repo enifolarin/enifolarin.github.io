@@ -31,6 +31,7 @@
     
     <link rel='stylesheet' href='../assets/library/boxicons/css/boxicons.css' type='text/css'>
     <link rel='stylesheet' href='../assets/library/animate/animate.min.css' type='text/css'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title> Fiction | Enifolarin's Portfolio. </title>
 
@@ -83,7 +84,7 @@
         <div class="col-12 container">
             <div class="all-portfolio">
                 <div class="portfolio-box">
-                    <article class="portfolio-card animated zoomInUP">
+                    <article class="portfolio-card" data-aos="zoom-in">
                         <div class="portfolio-card-img">
                             <a href="my-lord-may-i.html" rel="bookmark">
                                 <img src="../assets/img/lord.jpg" alt="">
@@ -98,7 +99,7 @@
                         </div>
                     </article>
 
-                    <article class="portfolio-card animated zoomInUP">
+                    <article class="portfolio-card" data-aos="zoom-in">
                         <div class="portfolio-card-img">
                             <a href="boom-he-rang.html" rel="bookmark">
                                 <img src="../assets/img/boom.jpg" alt="">
@@ -150,6 +151,13 @@
     
 
     <script type='text/javascript' src='../assets/js/script.js'></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 500,
+            once: true,
+        });
+    </script>
 </body>
 
 </html>

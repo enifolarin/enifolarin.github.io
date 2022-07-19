@@ -30,6 +30,7 @@
     
     <link rel='stylesheet' href='./assets/library/boxicons/css/boxicons.css' type='text/css'>
     <link rel='stylesheet' href='./assets/library/animate/animate.min.css' type='text/css'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title> Enifolarin's Portfolio. </title>
 
@@ -97,7 +98,7 @@
         <div class="col-12 container">
             <div class="all-portfolio">
                 <div class="portfolio-box">
-                    <article class="portfolio-card-overlay animated zoomInUP">
+                    <article class="portfolio-card-overlay" data-aos="zoom-in" data-aos-easing="ease-in-out-quart">
                         <a href="copy/" rel="bookmark">
                             <div class="portfolio-card-img">
                                 <img src="assets/img/copy-1.jpg" alt="">
@@ -109,7 +110,7 @@
                     </article>
                 
                 
-                    <article class="portfolio-card-overlay animated zoomInUP">
+                    <article class="portfolio-card-overlay" data-aos="zoom-in" data-aos-easing="ease-in-out-quart">
                         <a href="articles/" rel="bookmark">
                             <div class="portfolio-card-img">
                                 <img src="assets/img/article-o.jpg" alt="article">
@@ -121,7 +122,7 @@
                     </article>
                 
                 
-                    <article class="portfolio-card-overlay animated zoomInUP">
+                    <article class="portfolio-card-overlay" data-aos="zoom-in" data-aos-easing="ease-in-out-quart">
                         <a href="fiction/" rel="bookmark">
                             <div class="portfolio-card-img">
                                 <img src="assets/img/fiction.jpg" alt="fiction">
@@ -169,6 +170,13 @@
     
 
     <script type='text/javascript' src='./assets/js/script.js'></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 500,
+            once: true,
+        });
+    </script>
 </body>
 
 </html>

@@ -31,6 +31,7 @@
     
     <link rel='stylesheet' href='../assets/library/boxicons/css/boxicons.css' type='text/css'>
     <link rel='stylesheet' href='../assets/library/animate/animate.min.css' type='text/css'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title> Articles | Enifolarin's Portfolio. </title>
 
@@ -84,7 +85,7 @@
             <div class="all-portfolio">
                 <div class="portfolio-box">
 
-                    <article class="portfolio-card animated zoomInUP"> <!--bodies are bodies-->
+                    <article class="portfolio-card" data-aos="zoom-in"> <!--bodies are bodies-->
                         <div class="portfolio-card-img">
                             <a href="bodies-are-bodies.html" rel="bookmark">
                                 <img src="../assets/img/bodies.png" alt="">
@@ -98,7 +99,7 @@
                         </div>
                     </article>
 
-                    <article class="portfolio-card animated zoomInUP"> <!--Furniture in xxxx-->
+                    <article class="portfolio-card" data-aos="zoom-in"> <!--Furniture in xxxx-->
                         <div class="portfolio-card-img">
                             <a href="cafe-restaurant-furniture-xxxx.html" rel="bookmark">
                                 <img src="../assets/img/furniture.jpg" alt="">
@@ -112,7 +113,7 @@
                         </div>
                     </article>
                     
-                    <article class="portfolio-card animated zoomInUP"> <!--Beauty protects art-->
+                    <article class="portfolio-card" data-aos="zoom-in"> <!--Beauty protects art-->
                         <div class="portfolio-card-img">
                             <a href="beauty-protects-art.html" rel="bookmark">
                                 <img src="../assets/img/beauty.jpg" alt="">
@@ -126,7 +127,7 @@
                         </div>
                     </article>
 
-                    <article class="portfolio-card animated zoomInUP"> <!--Feminine Urge To Be The Table-->
+                    <article class="portfolio-card" data-aos="zoom-in"> <!--Feminine Urge To Be The Table-->
                         <div class="portfolio-card-img">
                             <a href="feminine-urge-to-be-table.html" rel="bookmark">
                                 <img src="../assets/img/f-table.jpg" alt="">
@@ -193,6 +194,13 @@
     
 
     <script type='text/javascript' src='../assets/js/script.js'></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 500,
+            once: true,
+        });
+    </script>
 </body>
 
 </html>
