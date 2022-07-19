@@ -1,0 +1,323 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins/Poppins.ttf);
+}
+@font-face {
+    font-family: RobotoSerif;
+    src: url(../fonts/RobotoSerif/RobotoSerif-Regular.ttf);
+}
+@font-face {
+    font-family: ARSMaquettePro;
+    src: url(../fonts/ARS-MaquettePro/ARSMaquettePro-Bold.woff2),
+        url(../fonts/ARS-MaquettePro/ARSMaquettePro-Bold.woff);
+}
+
+
+:root {
+    --font-one: sans-serif;
+    --font-two: 'Poppins',sans-serif;
+    --font-three: 'RobotoSerif',sans-serif;
+    --font-four: 'ARSMaquettePro',sans-serif;
+    --rounded-post: 10px;
+    --brightness: brightness(80%) contrast(1.1);
+    --transition: all ease-in-out 0.5s;
+    --theme-color: #1a8baf;
+    --title-size: 34px;
+    --navbar-item-text-transform: capitalize;
+}
+body {
+    --body-background: -webkit-linear-gradient(150deg, #f0f2f2, #f0f2f2, #f0f2f2);
+    --body-text-color: #252627;
+    --box-background: rgba(248,248,248,0.7);
+    --no-gradient-background: linear-gradient( rgb(0 0 0 / 0%), rgb(0 0 0 / 0%));
+    --box-shadow-color: 0.05rem 0.1rem 0.3rem -0.03rem rgb(0 0 0 / 45%);
+    --no-box-shadow: 0px 0.1px 0.3px -0.03px rgb(0 0 0 / 0%);
+    --time-color: #a1a1a1;
+    --tetiary-color: #ece9e8;
+    --code-color: #efefef;
+    --text-shadow: 1px 2.4px 4px rgba(0, 0, 0, 0.4);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: var(--font-one);
+}
+
+::selection {
+    background: var(--theme-color);
+    color: #fff;
+}
+::-moz-selection {
+    background: var(--theme-color);
+    color: #fff;
+}
+::-webkit-selection {
+    background: var(--theme-color);
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 4px black;
+    background-color: var(--box-background);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--theme-color);
+    border-radius: 4px;
+}
+
+html {
+    font-family: var(--font-one);
+}
+@media screen and (prefers-reduced-motion: reduce) {
+    html, body {
+        scroll-behavior: auto;
+    }
+    .animated {
+        animation: none !important;
+    }
+}
+
+html, body {
+    overflow-x: hidden;
+    padding: 0px;
+    margin: 0px;
+    transition: var(--transition);
+    background-image: var(--body-background);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+}
+h1,
+h2,
+p {
+    transition: var(--transition);
+}
+section {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+@media screen and (min-width: 1600px) {
+    #home-section,
+    #portfolio-section,
+    #contact-section {
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+@media screen and (min-width: 1700px) {
+    #home-section,
+    #portfolio-section,
+    #contact-section {
+        margin: 0 auto;
+        width: 65%;
+    }
+}
+
+.container {
+    z-index: 99999;
+    height: 100%;
+    background-color: transparent;
+    display: block;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.scroll-icon {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+}
+
+img.scroll-icn {
+    width: 40px;
+}
+@media screen and (max-width: 998px) {
+    .scroll-icon {
+        display: none;
+    }
+}
+
+.fullHeight {
+    height: 100% !important;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: radial-gradient(rgb(0, 0, 0, .6), transparent);
+}
+
+
+
+.socials {
+    margin: 5px 10px 5px 10px;
+}
+.socials a {
+    background: var(--theme-color);
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    transition: var(--transition);
+}
+.socials a:hover {
+    filter: var(--brightness);
+    transform: scale(1.3);
+}
+.socials a:hover i {
+    transform: rotate(360deg);
+}
+.socials a i {
+    color: #e7f2f4;
+    font-size: 20px;
+    transition: var(--transition);
+}
+@media screen and (min-width: 999px) {
+    .socials a {
+        width: 45px;
+        height: 45px;
+    }
+    .socials a i {
+        font-size: 25px;
+    }
+}
+/*----------------------------
+# FOOTER
+----------------------------*/
+.footer {
+    width: 100%;
+    display: grid;
+    background-color: #697070;
+    color: #fff;
+    border-top: 2px solid var(--theme-color);
+    z-index: 99;
+}
+
+.footer h4 {
+    font-family: var(--font-four);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    padding: 2px;
+    padding-left: 5px;
+    border-left: 5px solid var(--theme-color);
+}
+.footer p {
+    color: var(--footer-text-color);
+}
+.footer a {
+    color: var(--theme-color);
+}
+.footer a:hover {
+    color: var(--footer-text-color);
+}
+
+
+.footer-b {
+    display: block;
+    text-align: center;
+    padding: 35px 10px 35px 10px;
+}
+
+.f-menus {
+    margin-bottom: 10px;
+}
+.f-menu {
+    list-style: none;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 0;
+    margin: 0px;
+    display: block;
+}
+.f-menu li {
+    margin: 5px;
+    text-align: left;
+    display: inline-block;
+}
+.f-menu li a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    color: var(--footer-text-color);
+    padding: 5px;
+}
+.f-menu li a:hover {
+    font-family: var(--font-two);
+    font-weight: 900;
+    color: var(--theme-color);
+}
+
+.theme-author-link {
+    margin-top: 7px;
+}
+.theme-author-link a {
+    color: var(--theme-color);
+    font-family: inherit;
+    font-weight: 900;
+    font-size: 15.5px;
+}
+.theme-author-link a:hover {
+    font-family: var(--font-two);
+    font-weight: 900;
+}
+
+.footer p {
+    margin: 20px 0px 7px 0px;
+}
+.footer p,
+.f-menu li a,
+.theme-author-link {
+    font-family: var(--font-two);
+}
+
+.zoomInUP,
+.slideInUP,
+.slideInLEFT,
+.slideInRIGHT {
+    opacity: 0;
+}
+
+.zoomInUP.reveal {
+    opacity: 1;
+    animation-name: zoomInUp;
+}
+.slideInUP.reveal {
+    opacity: 1;
+    animation-name: slideInUp;
+}
+.slideInLEFT.reveal {
+    opacity: 1;
+    animation-name: slideInLeft;
+}
+.slideInRIGHT.reveal {
+    opacity: 1;
+    animation-name: slideInRight;
+}
+.animated {
+    animation-fill-mode: both !important;
+}
